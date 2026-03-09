@@ -24,7 +24,7 @@ const Contact = () => {
                     </svg>
                   ),
                   label: "Email",
-                  value: "modestedan771@gmail.com",
+                  value: "agrignanmanaf6@gmail.com",
                   href: "mailto:modestedan771@gmail.com",
                 },
                 {
@@ -34,7 +34,7 @@ const Contact = () => {
                     </svg>
                   ),
                   label: "Téléphone",
-                  value: "+228 90 65 62 81",
+                  value: "+228 79 77 11 47",
                   href: "tel:+22890656281",
                 },
                 {
@@ -45,7 +45,7 @@ const Contact = () => {
                     </svg>
                   ),
                   label: "Localisation",
-                  value: "Kpogan, Lomé — Togo",
+                  value: "Agoè, Lomé — Togo",
                   href: null,
                 },
               ].map(({ icon, label, value, href }) => (

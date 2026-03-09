@@ -6,56 +6,56 @@
 
 @layer base {
   :root {
-    --background: 220 25% 7%;
-    --foreground: 45 20% 92%;
+    --background: 270 25% 10%;        /* fond général violet sombre */
+    --foreground: 270 20% 95%;        /* texte clair violet/pastel */
 
-    --card: 220 20% 11%;
-    --card-foreground: 45 20% 92%;
+    --card: 270 20% 15%;              /* fond des cartes */
+    --card-foreground: 270 20% 95%;   /* texte des cartes */
 
-    --popover: 220 20% 11%;
-    --popover-foreground: 45 20% 92%;
+    --popover: 270 20% 15%;           /* popovers/fenêtres */
+    --popover-foreground: 270 20% 95%;
 
-    --primary: 42 88% 55%;
-    --primary-foreground: 220 25% 7%;
+    --primary: 270 80% 60%;           /* boutons, liens principaux */
+    --primary-foreground: 270 20% 10%; /* texte sur boutons */
 
-    --secondary: 220 15% 16%;
-    --secondary-foreground: 45 20% 92%;
+    --secondary: 270 30% 40%;         /* éléments secondaires */
+    --secondary-foreground: 270 20% 95%;
 
-    --muted: 220 15% 14%;
-    --muted-foreground: 220 10% 55%;
+    --muted: 270 20% 30%;             /* texte ou éléments atténués */
+    --muted-foreground: 270 20% 65%;
 
-    --accent: 42 88% 55%;
-    --accent-foreground: 220 25% 7%;
+    --accent: 270 70% 55%;            /* accents visuels */
+    --accent-foreground: 270 20% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 300 80% 50%;       /* alertes / erreurs */
+    --destructive-foreground: 270 20% 95%;
 
-    --border: 220 15% 18%;
-    --input: 220 15% 16%;
-    --ring: 42 88% 55%;
+    --border: 270 20% 20%;
+    --input: 270 20% 15%;
+    --ring: 270 80% 60%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 220 25% 7%;
-    --sidebar-foreground: 45 20% 92%;
-    --sidebar-primary: 42 88% 55%;
-    --sidebar-primary-foreground: 220 25% 7%;
-    --sidebar-accent: 220 15% 14%;
-    --sidebar-accent-foreground: 45 20% 92%;
-    --sidebar-border: 220 15% 18%;
-    --sidebar-ring: 42 88% 55%;
+    --sidebar-background: 270 25% 10%;
+    --sidebar-foreground: 270 20% 95%;
+    --sidebar-primary: 270 80% 60%;
+    --sidebar-primary-foreground: 270 20% 10%;
+    --sidebar-accent: 270 30% 40%;
+    --sidebar-accent-foreground: 270 20% 95%;
+    --sidebar-border: 270 20% 20%;
+    --sidebar-ring: 270 80% 60%;
 
-    /* Custom tokens */
-    --gold: 42 88% 55%;
-    --gold-dim: 42 60% 40%;
-    --navy: 220 25% 7%;
-    --surface: 220 20% 11%;
-    --surface-2: 220 15% 16%;
+    /* Custom tokens violettes */
+    --gold: 270 80% 60%;              /* ancien gold → violet vif */
+    --gold-dim: 270 60% 40%;          /* violet plus foncé */
+    --navy: 270 25% 10%;              /* fond principal */
+    --surface: 270 20% 15%;           /* surface des sections */
+    --surface-2: 270 30% 40%;         /* surfaces secondaires */
 
-    --gradient-hero: linear-gradient(135deg, hsl(220 25% 5%), hsl(220 30% 10%));
-    --gradient-gold: linear-gradient(135deg, hsl(42 88% 55%), hsl(35 80% 45%));
-    --shadow-gold: 0 0 30px hsl(42 88% 55% / 0.2);
-    --shadow-card: 0 8px 32px hsl(220 25% 3% / 0.6);
+    --gradient-hero: linear-gradient(135deg, hsl(270 25% 10%), hsl(270 30% 20%));
+    --gradient-gold: linear-gradient(135deg, hsl(270 80% 60%), hsl(275 70% 50%));
+    --shadow-gold: 0 0 30px hsl(270 80% 60% / 0.2);
+    --shadow-card: 0 8px 32px hsl(270 25% 8% / 0.6);
   }
 }
 

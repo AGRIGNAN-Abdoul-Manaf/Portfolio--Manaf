@@ -206,7 +206,7 @@ const ContactForm = () => {
           <p className="text-sm text-muted-foreground text-center">
             <strong>Alternative :</strong> Vous pouvez aussi me contacter directement par email à 
             <a href="mailto:modestedan771@gmail.com" className="text-gold hover:underline ml-1">
-              modestedan771@gmail.com
+              agrignanmanaf6@gmail.com
             </a>
           </p>
         </div>

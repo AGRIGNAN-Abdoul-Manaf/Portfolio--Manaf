@@ -10,22 +10,22 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <p className="font-body text-muted-foreground leading-relaxed mb-6 text-lg">
-              Je suis <span className="text-foreground font-medium">Danklou Modeste</span>, 
-              <span className="text-gold"> Référent Digital</span> diplômé au Centre ADN (Académie Digitale Numérique) du Golf 1 à Lomé, Togo.
-              Passionné par les technologies du marketing numérique et la communication digitale.
+              Je suis <span className="text-foreground font-medium">AGRIGNAN Abdou Manaf</span>, 
+              <span className="text-gold"> Développeur Fullstack</span> diplômé au Centre ADN (Académie Digitale Numérique) du Golf 1 à Lomé, Togo.
+              Passionné par la création d'applications web modernes et performantes, avec un intérêt pour les solutions logicielles innovantes.
             </p>
             <p className="font-body text-muted-foreground leading-relaxed mb-8">
-              Mon parcours atypique — de la biologie animale à l'université de Lomé au digital — me confère un esprit analytique
-              et une capacité à aborder les problèmes sous différents angles. Je maîtrise des outils comme WordPress, Figma, Canva
-              et j'ai des bases solides en HTML/CSS et SEO.
+              Mon parcours atypique — de la sociologie à l'université de Lomé au digital — me confère un esprit analytique
+              et une capacité à aborder les problèmes sous différents angles. Je suis également familier avec des outils de design et de création comme **Figma, Canva et WordPress**, 
+  ce qui me permet de créer des solutions web complètes, fonctionnelles et esthétiques.
             </p>
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { label: "Localisation", value: "Kpogan, Lomé — Togo" },
-                { label: "Formation", value: "Référent Digital (2025)" },
-                { label: "Email", value: "modestedan771@gmail.com" },
-                { label: "Téléphone", value: "+228 90 65 62 81" },
+                { label: "Localisation", value: "Agoè, Lomé — Togo" },
+                { label: "Formation", value: "développeur web & web(2025)" },
+                { label: "Email", value: "agrignanmanaf6@gmail.com" },
+                { label: "Téléphone", value: "+228 79 77 11 47" },
               ].map(({ label, value }) => (
                 <div key={label} className="bg-surface rounded-lg p-4 border border-border">
                   <p className="text-xs text-gold uppercase tracking-widest font-body mb-1">{label}</p>
@@ -42,18 +42,17 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -left-[25px] w-3 h-3 rounded-full bg-gold border-2 border-background" />
                 <p className="text-gold text-sm font-body mb-1">Mars 2025 — Décembre 2025</p>
-                <h4 className="font-display text-lg font-bold">Référent Digital</h4>
+                <h4 className="font-display text-lg font-bold">développeur web & web</h4>
                 <p className="text-muted-foreground text-sm font-body">Centre ADN Golf 1, Lomé</p>
                 <p className="text-muted-foreground text-sm font-body mt-2">
-                  Marketing digital, WordPress, Figma, Canva, SEO, HTML/CSS, gestion de projet
-                </p>
+HTML, CSS, JavaScript, React,Fliutter, Node.js, API, bases de données, WordPress, Figma, Canva, Git                </p>
               </div>
 
               <div className="relative">
                 <div className="absolute -left-[25px] w-3 h-3 rounded-full bg-surface-2 border-2 border-border" />
                 <p className="text-muted-foreground text-sm font-body mb-1">2020 — Aujourd'hui</p>
                 <h4 className="font-display text-lg font-bold">Commerce & Négociation</h4>
-                <p className="text-muted-foreground text-sm font-body">Revendeur au port, Lomé</p>
+                <p className="text-muted-foreground text-sm font-body">Revendeur d'articles technologiques, Lomé</p>
                 <p className="text-muted-foreground text-sm font-body mt-2">
                   Vente, négociation commerciale, gestion des stocks, relation clients
                 </p>
@@ -61,8 +60,8 @@ const About = () => {
 
               <div className="relative">
                 <div className="absolute -left-[25px] w-3 h-3 rounded-full bg-surface-2 border-2 border-border" />
-                <p className="text-muted-foreground text-sm font-body mb-1">2018 — Aujourd'hui</p>
-                <h4 className="font-display text-lg font-bold">Licence en Biologie Animale</h4>
+                <p className="text-muted-foreground text-sm font-body mb-1"></p>
+                <h4 className="font-display text-lg font-bold">Licence en Sociologie </h4>
                 <p className="text-muted-foreground text-sm font-body">Université de Lomé</p>
               </div>
             </div>

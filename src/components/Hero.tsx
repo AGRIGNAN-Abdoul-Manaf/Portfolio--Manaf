@@ -1,5 +1,5 @@
 import heroBg from "@/assets/hero-bg.jpg";
-import ppmomo from "/ppmomo1.png";
+import ppmomo from "/manaf.jpg.jpeg";
 import SocialLinks from "@/components/SocialLinks";
 
 const Hero = () => {
@@ -25,13 +25,13 @@ const Hero = () => {
 
         {/* Text */}
         <div className="text-center md:text-left">
-          <p className="text-gold font-body text-sm tracking-widest uppercase mb-3">Référent Digital</p>
+          <p className="text-gold font-body text-sm tracking-widest uppercase mb-3">Développeur Fullstack</p>
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-4">
-            DANKLOU<br />
-            <span className="gradient-text">Modeste</span>
+            AGRIGNAN<br />
+            <span className="gradient-text">Abdou Manaf</span>
           </h1>
           <p className="font-body text-muted-foreground text-lg max-w-md mb-8 leading-relaxed">
-            Passionné par le marketing numérique, le design et la communication digitale. Basé à Lomé, Togo.
+           Développeur Fullstack, passionné par la création d'applications web performantes et de solutions logicielles. Basé à Lomé, Togo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
@@ -41,8 +41,8 @@ const Hero = () => {
               Voir mes projets
             </button>
             <a
-              href="/CV_DANKLOU MODESTE.pdf"
-              download="CV_DANKLOU MODESTE.pdf"
+              href="/CV AGRIGNAN Abdou Manaf.pdf"
+              download="CV AGRIGNAN Abdou Manaf.pdf"
               className="px-8 py-3 border border-gold text-gold font-medium rounded font-body hover:bg-gold/10 transition-colors flex items-center gap-2"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

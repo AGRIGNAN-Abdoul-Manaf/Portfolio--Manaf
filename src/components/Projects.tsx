@@ -12,157 +12,122 @@ interface Project {
 }
 
 const defaultProjects: Project[] = [
-  // Projets Web
   {
     id: 1,
-    title: "Site WordPress",
-    description: "Création d'un site web avec WordPress, optimisé SEO.",
-    category: "Web",
-    image: "/e1.png",
-    details: "Site vitrine complet pour une entreprise locale avec système de réservation en ligne. Intégration de plugins personnalisés et optimisation des performances.",
-    technologies: ["WordPress", "WooCommerce", "SEO", "PHP"],
-    link: "https://example.com"
+    title: "Application mobile et web de vote",
+    description: "Vote en ligne avec paiement via TMoney et Flooz.",
+    category: "Web / Mobile",
+    image: "/vote.png",
+    details:
+      "Application web et mobile permettant de voter pour des candidats lors d'événements. Chaque vote est payant et l'utilisateur peut voter plusieurs fois sans créer de compte. Développée avec Flutter, ReactJS et Laravel.",
+    technologies: ["Flutter", "ReactJS", "Laravel", "TMoney API", "Flooz API"],
+    link: null,
   },
   {
     id: 2,
-    title: "Application React",
-    description: "Dashboard analytique avec React et TypeScript.",
+    title: "Site agence communication",
+    description: "Site internet d'une agence marketing digital avec WordPress.",
     category: "Web",
-    image: "/a1.png",
-    details: "Application web moderne pour l'analyse de données en temps réel avec graphiques interactifs et export PDF.",
-    technologies: ["React", "TypeScript", "Chart.js", "Node.js"],
-    link: "https://denti-info.vercel.app/"
+    image: "/ecommerce.jpg",
+    details:
+      "Site vitrine exposant les services de l'agence pour augmenter la clientèle. Développé sur WordPress avec thèmes et plugins personnalisés.",
+    technologies: ["WordPress", "SEO", "PHP", "HTML/CSS"],
+    link: null,
   },
   {
     id: 3,
-    title: "E-commerce Shopify",
-    description: "Boutique en ligne avec Shopify et personnalisation complète.",
+    title: "Mini application de vote React + Laravel",
+    description: "Lister les candidats et leurs détails.",
     category: "Web",
-    image: "/s1.png",
-    details: "Configuration complète d'une boutique Shopify avec thème personnalisé, intégration paiement et optimisation conversion.",
-    technologies: ["Shopify", "Liquid", "HTML/CSS", "Payment API"],
-    link: "https://shop.example.com"
+    image: "/list.png",
+    details:
+      "Mini application pour afficher une liste de candidats avec nom, prénom, nationalité, âge, poids, taille, descriptions et photo. Développée avec ReactJS et Laravel.",
+    technologies: ["ReactJS", "Laravel", "MySQL", "API REST"],
+    link: null,
   },
   {
     id: 4,
-    title: "Landing Page Vite",
-    description: "Page d'atterrissage haute performance avec Vite et Tailwind.",
-    category: "Web",
-    image: "/l1.png",
-    details: "Landing page optimisée pour le SEO avec animations fluides et formulaire de contact interactif.",
-    technologies: ["Vite", "Tailwind CSS", "JavaScript", "Netlify"],
-    link: "https://landing.example.com"
+    title: "Todo List mobile",
+    description: "Application mobile pour gérer des tâches.",
+    category: "Mobile",
+    image: "/todo.png",
+    details:
+      "Application mobile connectée à une API pour ajouter, modifier et supprimer des tâches.",
+    technologies: ["Flutter", "API REST", "SQLite"],
+    link: null,
   },
-  
-  // Projets Design
   {
     id: 5,
-    title: "Design Figma",
-    description: "Maquette UI/UX réalisée sur Figma pour un client.",
-    category: "Design",
-    image: "/r1.jpeg",
-    details: "Design complet d'une application mobile de livraison de repas. Création de wireframes, prototypes interactifs et design system.",
-    technologies: ["Figma", "UI/UX", "Prototyping", "Design System"],
-    link: "https://figma.com/example"
-  },
-  {
-    id: 13,
-    title: "Prototype Mobile",
-    description: "Prototype interactif d'application de livraison.",
-    category: "Design",
-    image: "/r2.jpeg",
-    details: "Prototype haute-fidélité avec animations et micro-interactions pour une application de livraison de repas.",
-    technologies: ["Figma", "Interactive Prototyping", "Mobile UX", "Animation"],
-    link: null
+    title: "Application mobile Quiz",
+    description: "Quiz mobile connecté à une API.",
+    category: "Mobile",
+    image: "/quiz.png",
+    details:
+      "Application mobile de quiz permettant de répondre à des questions provenant d'une API. Comprend un système de score et classement.",
+    technologies: ["Flutter", "API REST", "Dart"],
+    link: null,
   },
   {
     id: 6,
-    title: "Branding Startup",
-    description: "Identité visuelle complète pour une startup tech.",
-    category: "Design",
-    image: "/d1.png",
-    details: "Création de l'identité visuelle complète : logo, charte graphique, cartes de visite, et guidelines de marque.",
-    technologies: ["Illustrator", "Photoshop", "Branding", "Guidelines"],
-    link: null
+    title: "Application Football Laravel",
+    description: "Stats des joueurs et scores des matchs.",
+    category: "Web",
+    image: "/football.png",
+    details:
+      "Application développée en Laravel pour suivre les caractéristiques et statistiques des joueurs ainsi que les résultats des matchs.",
+    technologies: ["Laravel", "PHP", "MySQL", "Blade"],
+    link: null,
   },
   {
     id: 7,
-    title: "Interface Mobile",
-    description: "Design d'une application bancaire mobile.",
-    category: "Design",
-    image: "/b5.png",
-    details: "Conception UX/UI pour une application bancaire avec focus sur la sécurité et l'expérience utilisateur.",
-    technologies: ["Figma", "Mobile Design", "UX Research", "Prototyping"],
-    link: "https://mobile.example.com"
+    title: "Gestion de stock Laravel",
+    description: "CRUD pour gérer les catégories et produits.",
+    category: "Web",
+    image: "/boutiphone.png",
+    details:
+      "Application pour enregistrer, lire, modifier et supprimer des catégories et produits en utilisant Laravel et MySQL.",
+    technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+    link: null,
   },
   {
     id: 8,
-    title: "Site Web Design",
-    description: "Maquette responsive pour un site corporate.",
-    category: "Design",
-    image: "/b1.png",
-    details: "Design web responsive avec attention aux détails et optimisation pour tous les appareils.",
-    technologies: ["Figma", "Responsive Design", "Web Design", "CSS Grid"],
-    link: null
+    title: "Base de données Hôpital",
+    description: "Créer une base de données pour gérer les patients.",
+    category: "Backend",
+    image: "/hopisanté.png",
+    details:
+      "Mise en place de la base de données après avoir modélisé le diagramme de classes selon le cahier des charges.",
+    technologies: ["MySQL", "SQL", "DB Design"],
+    link: null,
   },
-  
-  // Projets Graphisme
   {
     id: 9,
-    title: "Création Canva",
-    description: "Visuels marketing et supports de communication.",
-    category: "Graphisme",
-    image: "/b2.png",
-    details: "Création de l'identité visuelle complète pour une startup : logo, cartes de visite, flyers, et templates pour les réseaux sociaux.",
-    technologies: ["Canva", "Branding", "Marketing Digital", "Social Media"],
-    link: null
-  },
-  {
-    id: 10,
-    title: "Logo Design",
-    description: "Création de logos pour plusieurs entreprises.",
-    category: "Graphisme",
-    image: "/b3.png",
-    details: "Conception de logos uniques et mémorables avec différentes variations (couleur, noir & blanc, inversé).",
-    technologies: ["Illustrator", "Vector Design", "Logo Design", "Creative Suite"],
-    link: null
-  },
-  {
-    id: 11,
-    title: "Affiches Publicitaires",
-    description: "Campagne d'affiches pour événement musical.",
-    category: "Graphisme",
-    image: "/f1.png",
-    details: "Création d'une série d'affiches pour un festival de musique avec déclinaisons pour différents formats.",
-    technologies: ["Photoshop", "InDesign", "Print Design", "Typography"],
-    link: null
-  },
-  {
-    id: 12,
-    title: "Social Media Kit",
-    description: "Templates pour réseaux sociaux.",
-    category: "Graphisme",
-    image: "/b6.png",
-    details: "Création de 50+ templates pour Instagram, Facebook, LinkedIn avec charte graphique cohérente.",
-    technologies: ["Canva", "Social Media", "Template Design", "Brand Consistency"],
-    link: null
+    title: "Gestion Bibliothèque",
+    description: "Diagramme de cas d'utilisation pour bibliothèque.",
+    category: "Backend",
+    image: "/bibliotheque.png",
+    details:
+      "Réalisation du diagramme de cas d'utilisation pour cadrer le projet de la Grande Bibliothèque de Lomé.",
+    technologies: ["UML", "DB Design", "Diagrammes"],
+    link: null,
   },
 ];
 
 const Projects = () => {
-  const [projects, setProjects] = useState<Project[]>(defaultProjects);
+  const [projects] = useState<Project[]>(defaultProjects);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
     <section id="projects" className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex items-center justify-between mb-16">
-          <div className="flex items-center gap-4">
-            <span className="w-8 h-px bg-gold" />
-            <h2 className="font-display text-4xl font-bold">Mes Projets</h2>
-          </div>
+
+        {/* Titre section */}
+        <div className="flex items-center gap-4 mb-16">
+          <span className="w-8 h-px bg-gold" />
+          <h2 className="font-display text-4xl font-bold">Mes Projets</h2>
         </div>
 
+        {/* Grille des projets */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div
@@ -170,107 +135,86 @@ const Projects = () => {
               className="group bg-surface border border-border rounded-xl overflow-hidden hover:border-gold/40 transition-all duration-300 hover:shadow-gold cursor-pointer"
               onClick={() => setSelectedProject(project)}
             >
-              {/* Image area */}
+              {/* Image */}
               <div className="relative h-52 bg-surface-2 overflow-hidden">
                 {project.image ? (
-                  <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 ) : (
-                  <div className="w-full h-full flex flex-col items-center justify-center text-muted-foreground">
-                    <svg className="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <span className="text-xs">Aucune capture</span>
+                  <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+                    Aucune image
                   </div>
                 )}
               </div>
 
-              {/* Content */}
+              {/* Contenu */}
               <div className="p-5">
-                <span className="text-xs text-gold font-body uppercase tracking-widest">{project.category}</span>
-                <h3 className="font-display text-lg font-bold mt-1 mb-2">{project.title}</h3>
-                <p className="text-muted-foreground text-sm font-body leading-relaxed">{project.description}</p>
-                <div className="mt-3 flex items-center text-gold text-xs font-body">
-                  <span>Voir les détails</span>
-                  <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
+                <span className="text-xs text-gold uppercase tracking-widest">
+                  {project.category}
+                </span>
+                <h3 className="font-display text-lg font-bold mt-1 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">{project.description}</p>
+                <div className="mt-3 text-gold text-xs">Voir les détails →</div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Project details modal */}
+        {/* Modal détails projet */}
         {selectedProject && (
-          <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-            <div className="bg-surface border border-border rounded-xl p-6 w-full max-w-2xl max-h-[90vh] overflow-y-auto">
-              <div className="flex justify-between items-start mb-6">
-                <div>
-                  <span className="text-xs text-gold font-body uppercase tracking-widest">{selectedProject.category}</span>
-                  <h3 className="font-display text-2xl font-bold mt-1">{selectedProject.title}</h3>
-                </div>
-                <button
-                  onClick={() => setSelectedProject(null)}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
+          <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
+            <div className="bg-surface rounded-xl p-6 w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+              <div className="flex justify-between mb-4">
+                <h3 className="text-2xl font-bold">{selectedProject.title}</h3>
+                <button onClick={() => setSelectedProject(null)}>✕</button>
               </div>
 
               {selectedProject.image && (
-                <div className="mb-6 rounded-lg overflow-hidden">
-                  <img src={selectedProject.image} alt={selectedProject.title} className="w-full h-64 object-cover" />
+                <div className="mb-4 rounded-lg overflow-hidden">
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    className="w-full h-64 object-cover"
+                  />
                 </div>
               )}
 
-              <div className="space-y-6">
-                <div>
-                  <h4 className="font-display text-lg font-bold mb-2">Description</h4>
-                  <p className="text-muted-foreground font-body leading-relaxed">{selectedProject.description}</p>
-                </div>
+              <p className="text-muted-foreground mb-4">{selectedProject.details}</p>
 
-                {selectedProject.details && (
-                  <div>
-                    <h4 className="font-display text-lg font-bold mb-2">Détails du projet</h4>
-                    <p className="text-muted-foreground font-body leading-relaxed">{selectedProject.details}</p>
-                  </div>
-                )}
-
-                {selectedProject.technologies && selectedProject.technologies.length > 0 && (
-                  <div>
-                    <h4 className="font-display text-lg font-bold mb-2">Technologies utilisées</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedProject.technologies.map((tech, index) => (
-                        <span key={index} className="px-3 py-1 bg-gold/10 text-gold text-xs font-body rounded-full">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {selectedProject.link && (
-                  <div>
-                    <h4 className="font-display text-lg font-bold mb-2">Lien du projet</h4>
-                    <a
-                      href={selectedProject.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-gold hover:text-gold/80 transition-colors font-body"
+              {selectedProject.technologies && selectedProject.technologies.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {selectedProject.technologies.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1 bg-gold/10 text-gold text-xs rounded-full"
                     >
-                      <span>Voir le projet</span>
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </a>
-                  </div>
-                )}
-              </div>
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              {selectedProject.link && (
+                <div className="mt-4">
+                  <a
+                    href={selectedProject.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gold underline"
+                  >
+                    Voir le projet
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         )}
+
       </div>
     </section>
   );

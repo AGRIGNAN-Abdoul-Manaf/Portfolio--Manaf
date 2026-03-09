@@ -4,15 +4,15 @@ const Footer = () => {
   return (
     <footer className="py-8 bg-background border-t border-border">
       <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <span className="font-display text-xl font-bold text-gold">DM.</span>
+        <span className="font-display text-xl font-bold text-gold">AM.</span>
         <p className="font-body text-sm text-muted-foreground text-center">
-          © 2025 Danklou Modeste — Référent Digital · Lomé, Togo
+         © 2025 AGRIGNAN Abdou Manaf — Développeur Fullstack · Lomé, Togo
         </p>
         <div className="flex items-center gap-6">
           <SocialLinks size="small" />
           <div className="flex gap-4">
             <a
-              href="mailto:modestedan771@gmail.com"
+              href="mailto:agrignanmanaf6@gmail.com"
               className="text-muted-foreground hover:text-gold transition-colors"
               aria-label="Email"
             >
@@ -21,7 +21,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="tel:+22890656281"
+              href="tel:+22879771147"
               className="text-muted-foreground hover:text-gold transition-colors"
               aria-label="Téléphone"
             >
