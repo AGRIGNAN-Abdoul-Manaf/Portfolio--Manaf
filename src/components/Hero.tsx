@@ -19,7 +19,7 @@ const Hero = () => {
           <div
             className="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden"
           >
-            <img src={ppmomo} alt="Danklou Modeste" className="w-full h-full object-cover" />
+            <img src={ppmomo} alt="Agrignan Abdou Manaf" className="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -51,7 +51,7 @@ const Hero = () => {
               Télécharger CV
             </a>
             <a
-              href="mailto:modestedan771@gmail.com"
+              href="mailto:agrignanmanaf6@gmail.com"
               className="px-8 py-3 border border-gold text-gold font-medium rounded font-body hover:bg-gold/10 transition-colors"
             >
               Me contacter

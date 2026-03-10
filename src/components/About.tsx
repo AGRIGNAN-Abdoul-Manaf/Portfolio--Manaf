@@ -23,7 +23,7 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { label: "Localisation", value: "Agoè, Lomé — Togo" },
-                { label: "Formation", value: "développeur web & web(2025)" },
+                { label: "Formation", value: "développeur web & mobile (2025)" },
                 { label: "Email", value: "agrignanmanaf6@gmail.com" },
                 { label: "Téléphone", value: "+228 79 77 11 47" },
               ].map(({ label, value }) => (
@@ -42,10 +42,10 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -left-[25px] w-3 h-3 rounded-full bg-gold border-2 border-background" />
                 <p className="text-gold text-sm font-body mb-1">Mars 2025 — Décembre 2025</p>
-                <h4 className="font-display text-lg font-bold">développeur web & web</h4>
+                <h4 className="font-display text-lg font-bold">développeur web & mobile</h4>
                 <p className="text-muted-foreground text-sm font-body">Centre ADN Golf 1, Lomé</p>
                 <p className="text-muted-foreground text-sm font-body mt-2">
-HTML, CSS, JavaScript, React,Fliutter, Node.js, API, bases de données, WordPress, Figma, Canva, Git                </p>
+HTML, CSS, JavaScript, React, Flutter, Node.js, API, bases de données, WordPress, Figma, Canva, Git                </p>
               </div>
 
               <div className="relative">
