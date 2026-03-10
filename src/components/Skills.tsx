@@ -108,19 +108,13 @@ const Skills = () => {
 
           <div className="flex flex-wrap gap-3">
             {[
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "React",
-              "Node.js",
-              "PHP",
-              "Laravel",
-              "MySQL",
-              "Git",
-              "GitHub",
-              "WordPress",
-              "Figma",
-              "Canva",
+  "Git",
+  "GitHub",
+  "Postman",
+  "Figma",
+  "Canva",
+  "WordPress"
+
             ].map((tool) => (
               <span
                 key={tool}
