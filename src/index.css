@@ -1,121 +1,312 @@
+/* ============================= */
+/* 1️⃣ TAILWIND BASE */
+/* ============================= */
+
+/* Charge les styles de base de Tailwind */
 @tailwind base;
+
+/* Charge les composants Tailwind */
 @tailwind components;
+
+/* Charge toutes les classes utilitaires (flex, grid, padding, etc) */
 @tailwind utilities;
 
+
+/* ============================= */
+/* 2️⃣ IMPORTATION DES POLICES */
+/* ============================= */
+
+/* Police pour les titres et le texte */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+
+/* ============================= */
+/* 3️⃣ VARIABLES GLOBALES DU SITE */
+/* ============================= */
 
 @layer base {
   :root {
-    --background: 270 25% 10%;        /* fond général violet sombre */
-    --foreground: 270 20% 95%;        /* texte clair violet/pastel */
 
-    --card: 270 20% 15%;              /* fond des cartes */
-    --card-foreground: 270 20% 95%;   /* texte des cartes */
+    /* ============================= */
+    /* COULEUR DU FOND PRINCIPAL */
+    /* ============================= */
 
-    --popover: 270 20% 15%;           /* popovers/fenêtres */
-    --popover-foreground: 270 20% 95%;
+    /* Bleu très sombre (fond du site) */
+    --background: 220 25% 7%;
 
-    --primary: 270 80% 60%;           /* boutons, liens principaux */
-    --primary-foreground: 270 20% 10%; /* texte sur boutons */
+    /* Couleur du texte principal (blanc légèrement doré) */
+    --foreground: 45 20% 92%;
 
-    --secondary: 270 30% 40%;         /* éléments secondaires */
-    --secondary-foreground: 270 20% 95%;
 
-    --muted: 270 20% 30%;             /* texte ou éléments atténués */
-    --muted-foreground: 270 20% 65%;
+    /* ============================= */
+    /* CARTES (Cards) */
+    /* ============================= */
 
-    --accent: 270 70% 55%;            /* accents visuels */
-    --accent-foreground: 270 20% 95%;
+    /* Fond des cartes (bleu sombre) */
+    --card: 220 20% 11%;
 
-    --destructive: 300 80% 50%;       /* alertes / erreurs */
-    --destructive-foreground: 270 20% 95%;
+    /* Texte dans les cartes (blanc) */
+    --card-foreground: 45 20% 92%;
 
-    --border: 270 20% 20%;
-    --input: 270 20% 15%;
-    --ring: 270 80% 60%;
 
+    /* ============================= */
+    /* POPUP / MODAL */
+    /* ============================= */
+
+    /* Fond des popups */
+    --popover: 220 20% 11%;
+
+    /* Texte dans les popups */
+    --popover-foreground: 45 20% 92%;
+
+
+    /* ============================= */
+    /* COULEUR PRINCIPALE */
+    /* ============================= */
+
+    /* Jaune / Or (boutons, liens importants) */
+    --primary: 42 88% 55%;
+
+    /* Texte sur les boutons jaunes */
+    --primary-foreground: 220 25% 7%;
+
+
+    /* ============================= */
+    /* COULEUR SECONDAIRE */
+    /* ============================= */
+
+    /* Gris bleu sombre */
+    --secondary: 220 15% 16%;
+
+    /* Texte secondaire */
+    --secondary-foreground: 45 20% 92%;
+
+
+    /* ============================= */
+    /* ELEMENTS ATTÉNUÉS */
+    /* ============================= */
+
+    /* Fond atténué */
+    --muted: 220 15% 14%;
+
+    /* Texte gris (moins important) */
+    --muted-foreground: 220 10% 55%;
+
+
+    /* ============================= */
+    /* ACCENT */
+    /* ============================= */
+
+    /* Jaune or pour hover et effets */
+    --accent: 42 88% 55%;
+
+    /* Texte sur accent */
+    --accent-foreground: 220 25% 7%;
+
+
+    /* ============================= */
+    /* COULEUR D'ERREUR */
+    /* ============================= */
+
+    /* Rouge erreur */
+    --destructive: 0 84.2% 60.2%;
+
+    /* Texte sur erreur */
+    --destructive-foreground: 210 40% 98%;
+
+
+    /* ============================= */
+    /* BORDURES ET INPUT */
+    /* ============================= */
+
+    /* Couleur des bordures (gris sombre) */
+    --border: 220 15% 18%;
+
+    /* Fond des champs input */
+    --input: 220 15% 16%;
+
+    /* Couleur focus (quand on clique sur un champ) */
+    --ring: 42 88% 55%;
+
+
+    /* Rayon des coins */
     --radius: 0.5rem;
 
-    --sidebar-background: 270 25% 10%;
-    --sidebar-foreground: 270 20% 95%;
-    --sidebar-primary: 270 80% 60%;
-    --sidebar-primary-foreground: 270 20% 10%;
-    --sidebar-accent: 270 30% 40%;
-    --sidebar-accent-foreground: 270 20% 95%;
-    --sidebar-border: 270 20% 20%;
-    --sidebar-ring: 270 80% 60%;
 
-    /* Custom tokens violettes */
-    --gold: 270 80% 60%;              /* ancien gold → violet vif */
-    --gold-dim: 270 60% 40%;          /* violet plus foncé */
-    --navy: 270 25% 10%;              /* fond principal */
-    --surface: 270 20% 15%;           /* surface des sections */
-    --surface-2: 270 30% 40%;         /* surfaces secondaires */
+    /* ============================= */
+    /* SIDEBAR */
+    /* ============================= */
 
-    --gradient-hero: linear-gradient(135deg, hsl(270 25% 10%), hsl(270 30% 20%));
-    --gradient-gold: linear-gradient(135deg, hsl(270 80% 60%), hsl(275 70% 50%));
-    --shadow-gold: 0 0 30px hsl(270 80% 60% / 0.2);
-    --shadow-card: 0 8px 32px hsl(270 25% 8% / 0.6);
+    /* Fond du menu latéral */
+    --sidebar-background: 220 25% 7%;
+
+    /* Texte du menu */
+    --sidebar-foreground: 45 20% 92%;
+
+    /* Couleur principale du menu */
+    --sidebar-primary: 42 88% 55%;
+
+    /* Texte sur sidebar */
+    --sidebar-primary-foreground: 220 25% 7%;
+
+    /* Accent sidebar */
+    --sidebar-accent: 220 15% 14%;
+
+    /* Texte accent */
+    --sidebar-accent-foreground: 45 20% 92%;
+
+    /* Bordure sidebar */
+    --sidebar-border: 220 15% 18%;
+
+    /* Focus sidebar */
+    --sidebar-ring: 42 88% 55%;
+
+
+    /* ============================= */
+    /* VARIABLES PERSONNALISÉES */
+    /* ============================= */
+
+    /* Couleur or */
+    --gold: 42 88% 55%;
+
+    /* Or plus sombre */
+    --gold-dim: 42 60% 40%;
+
+    /* Bleu sombre principal */
+    --navy: 220 25% 7%;
+
+    /* Surface des sections */
+    --surface: 220 20% 11%;
+
+    /* Surface secondaire */
+    --surface-2: 220 15% 16%;
+
+
+    /* ============================= */
+    /* DEGRADES */
+    /* ============================= */
+
+    /* Dégradé section hero */
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(220 25% 5%),
+      hsl(220 30% 10%)
+    );
+
+    /* Dégradé doré */
+    --gradient-gold: linear-gradient(
+      135deg,
+      hsl(42 88% 55%),
+      hsl(35 80% 45%)
+    );
+
+
+    /* ============================= */
+    /* OMBRES */
+    /* ============================= */
+
+    /* Ombre dorée */
+    --shadow-gold: 0 0 30px hsl(42 88% 55% / 0.2);
+
+    /* Ombre pour les cartes */
+    --shadow-card: 0 8px 32px hsl(220 25% 3% / 0.6);
   }
 }
 
+
+/* ============================= */
+/* 4️⃣ STYLE GLOBAL */
+/* ============================= */
+
 @layer base {
+
+  /* Applique la couleur des bordures à tous les éléments */
   * {
     @apply border-border;
   }
 
+  /* Style du body */
   body {
+
+    /* applique background et couleur texte */
     @apply bg-background text-foreground;
+
+    /* police principale */
     font-family: 'Inter', sans-serif;
+
+    /* améliore l'affichage du texte */
     -webkit-font-smoothing: antialiased;
   }
 
+  /* Style des titres */
   h1, h2, h3 {
+
+    /* police élégante pour les titres */
     font-family: 'Playfair Display', serif;
   }
 }
 
+
+/* ============================= */
+/* 5️⃣ UTILITIES PERSONNALISÉES */
+/* ============================= */
+
 @layer utilities {
+
+  /* Police des titres */
   .font-display {
     font-family: 'Playfair Display', serif;
   }
 
+  /* Police du texte normal */
   .font-body {
     font-family: 'Inter', sans-serif;
   }
 
+  /* Texte couleur or */
   .text-gold {
     color: hsl(var(--gold));
   }
 
+  /* Background or */
   .bg-gold {
     background: hsl(var(--gold));
   }
 
+  /* Background surface */
   .bg-surface {
     background: hsl(var(--surface));
   }
 
+  /* Surface secondaire */
   .bg-surface-2 {
     background: hsl(var(--surface-2));
   }
 
+  /* Bordure dorée */
   .border-gold {
     border-color: hsl(var(--gold));
   }
 
+  /* Ombre dorée */
   .shadow-gold {
     box-shadow: var(--shadow-gold);
   }
 
+  /* Background avec dégradé doré */
   .gradient-gold {
     background: var(--gradient-gold);
   }
 
+  /* Texte avec dégradé */
   .gradient-text {
+
     background: var(--gradient-gold);
+
+    /* rend le texte transparent pour afficher le gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
     background-clip: text;
   }
 }

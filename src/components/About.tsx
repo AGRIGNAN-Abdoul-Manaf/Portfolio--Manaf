@@ -59,10 +59,9 @@ HTML, CSS, JavaScript, React, Flutter, Node.js, API, bases de données, WordPres
               </div>
 
               <div className="relative">
-                <div className="absolute -left-[25px] w-3 h-3 rounded-full bg-surface-2 border-2 border-border" />
-                <p className="text-muted-foreground text-sm font-body mb-1"></p>
-                <h4 className="font-display text-lg font-bold">Licence en Sociologie </h4>
-                <p className="text-muted-foreground text-sm font-body">Université de Lomé</p>
+            
+                
+                
               </div>
             </div>
           </div>
